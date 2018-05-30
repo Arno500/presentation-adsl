@@ -92,10 +92,81 @@
                         dédiée aux données numériques. C'est donc le modem (souvent une box dans ce cas) qui va se charger
                         de convertir les données analogiques du téléphone en données numériques pour les envoyer en VoIP.</aside>
                 </section>
+
+                <section>
+                    <h3>Les NRA</h3>
+                    <h4>Noeud de Raccordement d'Abonnés</h4>
+                    <aside class="notes">Ils sont au coeur des réseaux ADSL. Les NRA sont des centraux téléphoniques. Petit abri mais peut être
+                        aussi de grande taille.Un FAI ne peut pas développer sa boucle locale d'abonnés, la seule solution
+                        est d'obliger l'opérateur national historique à partager ses lignes via le dégroupage des lignes
+                        comme nous l'avons vu auparavant.</aside>
+                    <img src="http://drennecadsl.free.fr/data/images/drennecadsl/nra-zo.png">
+                </section>
             </section>
             <section>
                 <section>
-                    <h3>Les NRA</h3>
+                    <h3>Le kit de survie pour transmettre un signal ADSL:</h3>
+                    <ul>
+                        <li>Un support adéquat : la paire torsadée</li>
+                        <li>Une bande passante délimitée, en cohérence avec le support</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Le support de transmission : la paire torsadée</h3>
+                    <ul>
+                        <li>
+                            Longues distances
+                        </li>
+                        <li>
+                            Conditions "extrêmes"
+                        </li>
+                    </ul>
+                    <aside class="notes">C'est un support qui parcours de longues distances, et qui peut être dégradé par les conditions extérieures,
+                        notamment en campagne où il n'est pas enterré et où le central peut se situer à une dizaine de kilomètres.</aside>
+                </section>
+                <section>
+                    <h3>
+                        La bande passante limitée
+                    </h3>
+                    <p>L'atténuation nous joue des tours</p>
+                    <aside class="notes">À cause de ces contraintes, la paire torsadée a une bande passante limitée, et on va utiliser quelques
+                        astuces pour avoir pour optimiser la quantité et la qualité des données qui transitent</aside>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h3>Une problèmatique : le bruit sur la ligne</h3>
+                    <img src="img/33849133_1986052274746988_6294248209778737152_n.png">
+                    <aside class="notes">Prenons ici l'exemple d'une constellation. On a ici les points verts qui correspondent aux symboles possibles
+                        par rapport à la modulation choisie et les points rouges qui correspondent aux symboles reçus. On
+                        se rend compte que les symboles reçus sont différents des symboles possibles. C'est cette différence
+                        que l'on defini comme le bruit. Avec le bruit, le problème, c'est lorsqu'il y a un symbole reçu qui
+                        se situe entre deux symboles possibles, le signal peut être mal interprété.
+                    </aside>
+                </section>
+
+            </section>
+            <section>
+                <section>
+                    <h3>La solution : la modulation MAQ !</h3>
+                    <p>Une modulation bien pratique pour l'ADSL</p>
+                    <aside class="notes">Modulation d'Amplitude en Quadrature, ou quadrature amplitude modulation : QAM en anglais</aside>
+                </section>
+                <section>
+                    <h3>
+                        Ses caractéristiques :
+                    </h3>
+                    <ul>
+                        <li>
+                            Fonctionnement en bande transposée : plusieurs signaux de transmission modulés en QAM sur un support de transmission = augmentation
+                            de la capacité brute
+                        </li>
+                        <li>
+                            Variation de l'amplitude ET de la phase = encore plus de symboles possibles
+                        </li>
+                    </ul>
+
+                    <!-- Variation amplitude + phase -->
                 </section>
             </section>
         </div>

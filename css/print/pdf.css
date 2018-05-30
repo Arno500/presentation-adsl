@@ -24,6 +24,7 @@ html {
 }
 
 /* Remove any elements not needed in print. */
+
 .nestedarrow,
 .reveal .controls,
 .reveal .progress,
@@ -35,7 +36,12 @@ html {
 	display: none !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	text-shadow: 0 0 0 #000 !important;
 }
 
@@ -44,7 +50,10 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: Courier, 'Courier New', monospace !important;
 }
 
-ul, ol, div, p {
+ul,
+ol,
+div,
+p {
 	visibility: visible;
 	position: static;
 	width: auto;
@@ -53,41 +62,39 @@ ul, ol, div, p {
 	overflow: visible;
 	margin: auto;
 }
+
 .reveal {
 	width: auto !important;
 	height: auto !important;
 	overflow: hidden !important;
 }
+
 .reveal .slides {
 	position: static;
 	width: 100% !important;
 	height: auto !important;
 	zoom: 1 !important;
-
 	left: auto;
 	top: auto;
 	margin: 0 !important;
 	padding: 0 !important;
-
 	overflow: visible;
 	display: block;
-
 	-webkit-perspective: none;
-	   -moz-perspective: none;
-	    -ms-perspective: none;
-	        perspective: none;
-
-	-webkit-perspective-origin: 50% 50%; /* there isn't a none/auto value but 50-50 is the default */
-	   -moz-perspective-origin: 50% 50%;
-	    -ms-perspective-origin: 50% 50%;
-	        perspective-origin: 50% 50%;
+	-moz-perspective: none;
+	-ms-perspective: none;
+	perspective: none;
+	-webkit-perspective-origin: 50% 50%;
+	/* there isn't a none/auto value but 50-50 is the default */
+	-moz-perspective-origin: 50% 50%;
+	-ms-perspective-origin: 50% 50%;
+	perspective-origin: 50% 50%;
 }
 
 .reveal .slides .pdf-page {
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
-
 	page-break-after: always;
 }
 
@@ -95,23 +102,19 @@ ul, ol, div, p {
 	visibility: visible !important;
 	display: block !important;
 	position: absolute !important;
-
 	margin: 0 !important;
 	padding: 0 !important;
 	box-sizing: border-box !important;
 	min-height: 1px;
-
 	opacity: 1 !important;
-
 	-webkit-transform-style: flat !important;
-	   -moz-transform-style: flat !important;
-	    -ms-transform-style: flat !important;
-	        transform-style: flat !important;
-
+	-moz-transform-style: flat !important;
+	-ms-transform-style: flat !important;
+	transform-style: flat !important;
 	-webkit-transform: none !important;
-	   -moz-transform: none !important;
-	    -ms-transform: none !important;
-	        transform: none !important;
+	-moz-transform: none !important;
+	-ms-transform: none !important;
+	transform: none !important;
 }
 
 .reveal section.stack {
@@ -125,6 +128,7 @@ ul, ol, div, p {
 
 .reveal img {
 	box-shadow: none;
+	height: 500px;
 }
 
 .reveal .roll {
@@ -133,6 +137,7 @@ ul, ol, div, p {
 }
 
 /* Slide backgrounds are placed inside of their slide when exporting to PDF */
+
 .reveal .slide-background {
 	display: block !important;
 	position: absolute;
@@ -144,10 +149,12 @@ ul, ol, div, p {
 }
 
 /* Display slide speaker notes when 'showNotes' is enabled */
+
 .reveal.show-notes {
 	max-width: none;
 	max-height: none;
 }
+
 .reveal .speaker-notes-pdf {
 	display: block;
 	width: 100%;
@@ -161,6 +168,7 @@ ul, ol, div, p {
 }
 
 /* Layout option which makes notes appear on a separate page */
+
 .reveal .speaker-notes-pdf[data-layout="separate-page"] {
 	position: relative;
 	color: inherit;
@@ -171,6 +179,7 @@ ul, ol, div, p {
 }
 
 /* Display slide numbers when 'slideNumber' is enabled */
+
 .reveal .slide-number-pdf {
 	display: block;
 	position: absolute;
