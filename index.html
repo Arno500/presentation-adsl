@@ -44,13 +44,13 @@
                             Rapidement
                         </li>
                     </ol>
-                    <aside class="notes">Par rapport à l'internet via les modem 56k, 350x plus rapide dans le meilleur des cas ! (jusqu'à 20 Mb/s)</aside>
+                    <aside class="notes"><b>GEOFFROY</b><br>Par rapport à l'internet via les modem 56k, 350x plus rapide dans le meilleur des cas ! (jusqu'à 20 Mb/s)</aside>
                 </section>
                 <section>
                     <h3>La solution :</h3>
                     <h1>L'ADSL™</h1>
                     <h5>Asymmetric Digital Subscriber Line</h5>
-                    <aside class="notes">Asymmetric Digital Subscriber Line</aside>
+                    <aside class="notes"><b>GEOFFROY</b><br>Asymmetric Digital Subscriber Line</aside>
                 </section>
                 <section>
                     <ol>
@@ -64,6 +64,7 @@
                             Pas de déploiement nécessaire !
                         </li>
                     </ol>
+                    <aside class="notes"><b>GEOFFROY</b><br>Dire que c'est des améliorations et les lister</aside>
                 </section>
             </section>
             <section>
@@ -73,13 +74,13 @@
                 </section>
                 <section>
                     <h2>Il est où le téléphone là ?</h2>
-                    <aside class="notes">On a parlé d'Internet qui passe par les lignes téléphoniques. Mais du coup, où va notre voix lorsque
+                    <aside class="notes"><b>ROMAIN</b><br>On a parlé d'Internet qui passe par les lignes téléphoniques. Mais du coup, où va notre voix lorsque
                         l'on téléphone ?</aside>
                 </section>
                 <section>
                     <h2>Dégroupage partiel</h2>
                     <img src="img/Voix+data.svg" alt="">
-                    <aside class="notes">Ici on vois que toute la ligne n'est pas dédiée aux données. On laisse une partie en voix analogique,
+                    <aside class="notes"><b>ROMAIN</b><br>Ici on vois que toute la ligne n'est pas dédiée aux données. On laisse une partie en voix analogique,
                         à l'ancienne, jusqu'à 4kHz, et à partir de 20kHz, on inclut des données numériques. Y'a une petite
                         zone d'espace entre les deux, pour faciliter le filtrage de le voix et des données, que l'on va voir
                         après.
@@ -88,15 +89,16 @@
                 <section>
                     <h3>Dégroupage total</h3>
                     <img src="img/Data.svg" alt="">
-                    <aside class="notes">Ici c'est plus simple, toute la ligne jusqu'au central (le NRA que l'on va détailler juste après) est
+                    <aside class="notes"><b>ROMAIN</b><br>Ici c'est plus simple, toute la ligne jusqu'au central (le NRA que l'on va détailler juste après) est
                         dédiée aux données numériques. C'est donc le modem (souvent une box dans ce cas) qui va se charger
-                        de convertir les données analogiques du téléphone en données numériques pour les envoyer en VoIP.</aside>
+                        de convertir les données analogiques du téléphone en données numériques pour les envoyer en VoIP,
+                        ou alors la conversion vers de l'analogique se fera au central.</aside>
                 </section>
 
                 <section>
                     <h3>Les NRA</h3>
                     <h4>Noeud de Raccordement d'Abonnés</h4>
-                    <aside class="notes">Ils sont au coeur des réseaux ADSL. Les NRA sont des centraux téléphoniques. Petit abri mais peut être
+                    <aside class="notes"><b>ROMAIN</b><br>Ils sont au coeur des réseaux ADSL. Les NRA sont des centraux téléphoniques. Petit abri mais peut être
                         aussi de grande taille.Un FAI ne peut pas développer sa boucle locale d'abonnés, la seule solution
                         est d'obliger l'opérateur national historique à partager ses lignes via le dégroupage des lignes
                         comme nous l'avons vu auparavant.</aside>
@@ -110,34 +112,35 @@
                         <li>Un support adéquat : la paire torsadée</li>
                         <li>Une bande passante délimitée, en cohérence avec le support</li>
                     </ul>
+                    <aside class="notes"><b>ARNO</b><br></aside>
                 </section>
                 <section>
                     <h3>Le support de transmission : la paire torsadée</h3>
                     <ul>
                         <li>
-                            Longues distances
+                            Longues distances (atténuation)
                         </li>
                         <li>
                             Conditions "extrêmes"
                         </li>
                     </ul>
-                    <aside class="notes">C'est un support qui parcours de longues distances, et qui peut être dégradé par les conditions extérieures,
+                    <aside class="notes"><b>ARNO</b><br>C'est un support qui parcours de longues distances, et qui peut être dégradé par les conditions extérieures,
                         notamment en campagne où il n'est pas enterré et où le central peut se situer à une dizaine de kilomètres.</aside>
                 </section>
                 <section>
                     <h3>
                         La bande passante limitée
                     </h3>
-                    <p>L'atténuation nous joue des tours</p>
-                    <aside class="notes">À cause de ces contraintes, la paire torsadée a une bande passante limitée, et on va utiliser quelques
+                    <p>Oui, oui, l'ADSL ne va pas aussi vite que la fibre...</p>
+                    <aside class="notes"><b>ARNO</b><br>À cause de ces contraintes, la paire torsadée a une bande passante limitée, et on va utiliser quelques
                         astuces pour avoir pour optimiser la quantité et la qualité des données qui transitent</aside>
                 </section>
             </section>
             <section>
                 <section>
-                    <h3>Une problèmatique : le bruit sur la ligne</h3>
+                    <h3>Une problèmatique supplémentaire: le bruit sur la ligne</h3>
                     <img src="img/33849133_1986052274746988_6294248209778737152_n.png">
-                    <aside class="notes">Prenons ici l'exemple d'une constellation. On a ici les points verts qui correspondent aux symboles possibles
+                    <aside class="notes"><b>ARNO</b><br>Prenons ici l'exemple d'une constellation. On a ici les points verts qui correspondent aux symboles possibles
                         par rapport à la modulation choisie et les points rouges qui correspondent aux symboles reçus. On
                         se rend compte que les symboles reçus sont différents des symboles possibles. C'est cette différence
                         que l'on defini comme le bruit. Avec le bruit, le problème, c'est lorsqu'il y a un symbole reçu qui
@@ -150,7 +153,7 @@
                 <section>
                     <h3>La solution : la modulation MAQ !</h3>
                     <p>Une modulation bien pratique pour l'ADSL</p>
-                    <aside class="notes">Modulation d'Amplitude en Quadrature, ou quadrature amplitude modulation : QAM en anglais</aside>
+                    <aside class="notes"><b>ARNO</b><br>Modulation d'Amplitude en Quadrature, ou quadrature amplitude modulation : QAM en anglais</aside>
                 </section>
                 <section>
                     <h3>
@@ -165,10 +168,72 @@
                             Variation de l'amplitude ET de la phase = encore plus de symboles possibles
                         </li>
                     </ul>
-
-                    <!-- Variation amplitude + phase -->
+                </section>
+                <section>
+                    <h3>Mais surtout, la distance entre les points en augmentée</h3>
+                    <img src="img/16QAM_Gray_Coded.svg">
+                    <aside class="notes"><b>ARNO</b><br>Ici, on a une constellation d'un signal modulé en QAM, avec 16 symboles. On observe que ces symboles
+                        sont placés en 2 dimensions. Alors que tout à l'heure, on avait une dimension, ce n'était que la
+                        phase qui variait (sur le signal modulé en question). Dans le cas de cette modulation, l'amplitude
+                        varie (c'est donc représenté par la distance entre le centre du schéma et le point) ainsi que la
+                        phase (représenté par l'angle). La distance entre les points sur le schéma est donc augmentée, ce
+                        qui permet d'éviter plus facilement les erreurs dûes aux intérférences. En effet, </aside>
                 </section>
             </section>
+
+            <section>
+                <section>
+                    <h2>Les conditions ne sont JAMAIS parfaites</h2>
+                </section>
+                <section>
+                    <h3>Les modems, c'est magique</h3>
+                    <p>Autoconfiguration !</p>
+                    <img src="img/adsl_frequencies.gif">
+                    <aside class="notes"><b>ARNO</b><br>Donc le modem a un mode spécial, où il va pouvoir demander à son correspondant au central d'émettre un
+                        signal générique sur une fréquence donnée. À la réception, le modem va donc pouvoir comparer ce qui
+                        aurait dû arriver, et ce qui est arrivé. Si le signal a été modifié de manière trop conséquente,
+                        alors le modem décide de ne plus utiliser les fréquences impactées !
+                        <br> Ptite demo sur le schéma</aside>
+                </section>
+                <section>
+                    <h2>Les modems s'adaptent tous seuls aux charactéristiques de la ligne de chacun !</h2>
+                </section>
+            </section>
+
+            <section>
+                <section>
+                    <h3>Calcul de débit en fonction des conditions de bruits</h3>
+                    <h4>Exemple :</h4>
+                    <p>
+                        On a plutôt de bonnes conditions (on ne calcule qu'en sens descendant, vers l'abonné) :
+                        <ul>
+                            <li>
+                                100 sous-bandes à 8 bits par symbole (conditions moyennes)
+                            </li>
+                            <li>
+                                100 sous-bandes à 10 bits par symbole (conditions satisfaisantes)
+                            </li>
+                        </ul>
+                    </p>
+                    <aside class="notes"><b>GEOFFROY</b><br>On prends des conditions arbitraires, et ce n'est pas parce que ces conditions sont vraies à un instant
+                        T qu'elles le seront tout le temps de la transmission. En effet, les modems se réajustent constamment,
+                        comme vu plus haut.</aside>
+                </section>
+                <section>
+                    <h3>Donc :</h3>
+                    <p>100 * 8 * 4000 + 100 * 10 * 4000
+                        <br> 7200000 bits/s
+                        <br> 7,2 Mbps
+                    </p>
+                    <aside class="notes"><b>GEOFFROY</b><br>100 sous-bandes avec 8 bits par symboles, on multiplie par la constante de 4000, qui correspond au débit
+                        de symboles constants par seconde en ADSL. Et répète l'opération pour les autres sous-bandes, et
+                        on a notre débit descendant.</aside>
+                </section>
+            </section>
+            <section>
+                <h2>FIN</h2>
+            </section>
+
         </div>
     </div>
 
